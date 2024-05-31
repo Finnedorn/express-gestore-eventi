@@ -86,6 +86,35 @@ class Reservation {
         fs.writeFileSync(this.#pathReservations, JSON.stringify(this.#reservations, null, 2));
         return this.#reservations;
     }
+
+
+    // ---metodo addReservation con aggiunga di controllo su data e posti disponibili (commentato in quanto non ancora testato)---
+
+    // static addReservation(reservation) {
+    //     const event = this.#events.find(event => event.id === reservation.eventId);
+    
+    //     if (!event) {
+    //         throw new Error(`Evento non trovato con ID: ${reservation.eventId}`);
+    //     }
+        
+    //     const eventDate = new Date(event.date);
+    //     const currentDate = new Date();
+
+    //     // se la data è ancora valida rispetto a quella odiera 
+    //     if (eventDate < currentDate) {
+    //         throw new Error(`Impossibile prenotare per un evento passato`);
+    //     // e se il valore dei posti disponibili è maggiore di 0
+    //     } else if(event.maxSeats <= 0){
+    //         throw new Error(`Impossibile prenotare: i posto disponibili sono esauriti`);
+    //     }
+        
+
+    //     this.#reservations.push(reservation);
+    //     fs.writeFileSync(this.#pathReservations, JSON.stringify(this.#reservations, null, 2));
+    //     return this.#reservations;
+    // }
+
+
     
     // rimuovo una reservation dal db (destroy)
     static deleteReservation(id) {
