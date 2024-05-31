@@ -1,17 +1,11 @@
-const { error } = require("console");
 const fs = require("fs");
 const path = require("path");
 
 
 class Event {
-    static Counter = 1;
-    id;
-    title;
-    description;
-    date;
-    maxSeats;
     static #filePath = path.join(__dirname, "../db/db-events.json");
     static #events = require("../db/db-events.json");
+    static Counter = Event.#events.length > 0 ? Math.max(...Event.#events.map(event=> event.id)) + 1 : 1;
 
     constructor(title, description, date, maxSeats){
         this.id = Event.Counter++;

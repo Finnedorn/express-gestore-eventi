@@ -33,14 +33,19 @@ Creiamo le seguenti rotte per gestire le prenotazioni
 [GET] events/:event/reservations (index)
 [POST] events/:event/reservations (store)
 [DELETE] events/:event/reservations/:reservation (destroy)
+
+
 Creiamo il model models/reservation.js e prevediamo le seguenti proprietà
 id
 firstName
 lastName
 email
 eventId
+
 Nel model degli eventi, prevediamo una funzione per recuperare tutte le prenotazioni associate
-Creiamo dei setter per ogni proprietà dei nostri model ed implementiamo una validazione dei dati ricevuti. Nel caso, lanciamo un errore
+Creiamo dei setter per ogni proprietà dei nostri model ed implementiamo una validazione dei dati ricevuti.
+Nel caso, lanciamo un errore.
 Creare degli errori personalizzati estendendo la classe Error.
+
 Non permettiamo di aggiungere o togliere una prenotazione per un evento già passato
 Non permettiamo di aggiungere una prenotazione ad evento senza più posti disponibili.

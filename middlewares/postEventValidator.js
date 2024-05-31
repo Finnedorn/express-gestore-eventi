@@ -1,5 +1,5 @@
 // funzione middleware per controllare che i dati inviati dall'utente siano validi
-const postDataValidator = (req, res, next) => {
+const postEventValidator = (req, res, next) => {
 
     const { title, description, date, maxSeats } = req.body;
 
@@ -31,4 +31,4 @@ const postDataValidator = (req, res, next) => {
     next();
 };
 
-module.exports = postDataValidator;
+module.exports = postEventValidator;

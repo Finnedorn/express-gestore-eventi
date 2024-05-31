@@ -19,5 +19,33 @@
     "description": "Impara a cucinare piatti italiani tradizionali",
     "date": "20 agosto",
     "maxSeats": 20
+  },
+  {
+    "id": 4,
+    "title": "corso di cucito",
+    "description": "Impara a cucire piatti italiani tradizionali",
+    "date": "25 agosto",
+    "maxSeats": 20
+  },
+  {
+    "id": 5,
+    "title": "corso di cucito",
+    "description": "Impara a cucire piatti italiani tradizionali",
+    "date": "25 agosto",
+    "maxSeats": 20
+  },
+  {
+    "id": 6,
+    "title": "corso di cucito",
+    "description": "Impara a cucire piatti italiani tradizionali",
+    "date": "25 agosto",
+    "maxSeats": 20
+  },
+  {
+    "id": 7,
+    "title": "corso di cucito",
+    "description": "Impara a cucire piatti italiani tradizionali",
+    "date": "25 agosto",
+    "maxSeats": 20
   }
 ]

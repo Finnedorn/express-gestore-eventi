@@ -1,5 +1,6 @@
 // importo la classe Event 
 const Event = require("../models/events");
+const Reservation = require("../models/reservation");
 
 
 function index(req, res){
@@ -13,7 +14,7 @@ function store(req, res){
 };
 
 function show(req, res){
-    res.json(Event.read(req.params.id));
+    res.json(Event.read(req.params.event));
 }
 
 function put(req, res){
