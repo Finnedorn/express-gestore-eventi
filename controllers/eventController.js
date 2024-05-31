@@ -1,6 +1,5 @@
 // importo la classe Event 
 const Event = require("../models/events");
-const Reservation = require("../models/reservation");
 
 
 function index(req, res){

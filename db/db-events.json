@@ -1,51 +1,30 @@
 [
   {
     "id": 1,
-    "title": "conferenza",
+    "title": "Conferenza",
     "description": "Conferenza sulle nuove tecnologie",
     "date": "15 settembre",
     "maxSeats": 100
   },
   {
     "id": 2,
-    "title": "corso di cucina vegana",
+    "title": "Corso di cucina vegana",
     "description": "Impara a cucinare piatti italiani tradizionali",
     "date": "20 agosto",
     "maxSeats": 20
   },
   {
     "id": 3,
-    "title": "corso di cucina vegana",
-    "description": "Impara a cucinare piatti italiani tradizionali",
-    "date": "20 agosto",
-    "maxSeats": 20
+    "title": "Corso di nulla",
+    "description": "Impara il nulla",
+    "date": "2 ottobre",
+    "maxSeats": 100
   },
   {
     "id": 4,
-    "title": "corso di cucito",
-    "description": "Impara a cucire piatti italiani tradizionali",
-    "date": "25 agosto",
-    "maxSeats": 20
-  },
-  {
-    "id": 5,
-    "title": "corso di cucito",
-    "description": "Impara a cucire piatti italiani tradizionali",
-    "date": "25 agosto",
-    "maxSeats": 20
-  },
-  {
-    "id": 6,
-    "title": "corso di cucito",
-    "description": "Impara a cucire piatti italiani tradizionali",
-    "date": "25 agosto",
-    "maxSeats": 20
-  },
-  {
-    "id": 7,
-    "title": "corso di cucito",
-    "description": "Impara a cucire piatti italiani tradizionali",
-    "date": "25 agosto",
-    "maxSeats": 20
+    "title": "Corso di corsi",
+    "description": "Impara a corsare il tuo corso",
+    "date": "10 marzo",
+    "maxSeats": 2
   }
 ]

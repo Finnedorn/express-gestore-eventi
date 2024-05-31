@@ -1,44 +1,44 @@
 [
   {
     "id": 1,
-    "firstName": "Shiva",
-    "lastName": "Zanicchi",
-    "email": "shiva.zanicchi@example.com",
-    "eventId": 1
+    "_firstName": "Shiva",
+    "_lastName": "Zanicchi",
+    "_email": "shiva.zanicchi@example.com",
+    "_eventId": 1
   },
   {
     "id": 2,
-    "firstName": "Piero",
-    "lastName": "Peluches",
-    "email": "piero.peluches@example.com",
-    "eventId": 2
+    "_firstName": "Piero",
+    "_lastName": "Peluches",
+    "_email": "piero.peluches@example.com",
+    "_eventId": 2
   },
   {
     "id": 3,
-    "firstName": "Un",
-    "lastName": "Frigorifero",
-    "email": "un.frigorifero@example.com",
-    "eventId": 2
+    "_firstName": "Un",
+    "_lastName": "Frigorifero",
+    "_email": "un.frigorifero@example.com",
+    "_eventId": 2
   },
   {
     "id": 4,
-    "firstName": "Anna",
-    "lastName": "Cane",
-    "email": "anna.cane@example.com",
-    "eventId": 3
+    "_firstName": "Anna",
+    "_lastName": "Cane",
+    "_email": "anna.cane@example.com",
+    "_eventId": 3
   },
   {
     "id": 5,
-    "firstName": "Anna",
-    "lastName": "Cane",
-    "email": "anna.cane@example.com",
-    "eventId": 3
+    "_firstName": "Mario",
+    "_lastName": "Rossi",
+    "_email": "mario.rossi@example.com",
+    "_eventId": 3
   },
   {
     "id": 6,
-    "firstName": "Anna",
-    "lastName": "Cane",
-    "email": "anna.cane@example.com",
-    "eventId": 3
+    "_firstName": "Giovanni",
+    "_lastName": "Bianchi",
+    "_email": "giovanni.bianchi@example.com",
+    "_eventId": 1
   }
 ]
