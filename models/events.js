@@ -1,9 +1,10 @@
+const { error } = require("console");
 const fs = require("fs");
 const path = require("path");
-const fs = require("fs");
 
 
 class Event {
+    static Counter = 1;
     id;
     title;
     description;
@@ -12,34 +13,55 @@ class Event {
     static #filePath = path.join(__dirname, "../db/db-events.json");
     static #events = require("../db/db-events.json");
 
-    constructor(id, title, description, date, maxSeats){
-        this.id = id.toString();
-        this.title = title.toString();
-        this.description = description.toString();
-        this.date = date.toString();
-        this.maxSeats = parseInt(maxSeats);
+    constructor(title, description, date, maxSeats){
+        this.id = Event.Counter++;
+        this.title = title;
+        this.description = description;
+        this.date = date;
+        this.maxSeats = maxSeats;
     }
 
-    static index() {
+    static readAll() {
         return this.#events;
     }
 
-    static store(newContent) {
-        fs.writeFileSync( this.#filePath, JSON.stringify([...this.#events, newContent], null, 2));
-        return this.#events;
+    static read(idToShow) {
+        let eventToShow = this.#events.find(event => event.id === parseInt(idToShow));
+        if(eventToShow){
+            return eventToShow;
+        }else{
+            throw new Error(`id non trovato o non corretto`);
+        }
+        
     }
 
-    static put(content) {
-        const contentToUpdate = this.#events.find(event => event.id === content.id);
-        contentToUpdate = {
-            id: content.id,
-            title: content.title,
-            description: content.description,
-            date: content.date,
-            maxSeats: content.maxSeats,
+    static save(event) {
+        const newContent = {
+            id: event.id,
+            title: event.title,
+            description: event.description,
+            date: event.date,
+            maxSeats: event.maxSeats
         };
-        fs.writeFileSync( this.#filePath, JSON.stringify(this.#events, null, 2));
+        this.#events.push(newContent);
+        fs.writeFileSync(this.#filePath, JSON.stringify(this.#events, null, 2));
         return this.#events;
+    }
+
+    static update(id, content) {
+        let eventIndex = this.#events.findIndex(event => event.id === parseInt(id));
+        if (eventIndex) {
+            this.#events[eventIndex].title = content.title;
+            this.#events[eventIndex].description = content.description;
+            this.#events[eventIndex].date = content.date;
+            this.#events[eventIndex].maxSeats = content.maxSeats;
+            fs.writeFileSync(this.#filePath, JSON.stringify(this.#events, null, 2));
+            return this.#events[eventIndex];
+        } else {
+            throw new Error(`id non trovato o non corretto`);
+        }
     }
 
 }
+
+module.exports = Event;

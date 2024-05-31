@@ -1,1 +1,23 @@
-[{}]
+[
+  {
+    "id": 1,
+    "title": "conferenza",
+    "description": "Conferenza sulle nuove tecnologie",
+    "date": "15 settembre",
+    "maxSeats": 100
+  },
+  {
+    "id": 2,
+    "title": "corso di cucina vegana",
+    "description": "Impara a cucinare piatti italiani tradizionali",
+    "date": "20 agosto",
+    "maxSeats": 20
+  },
+  {
+    "id": 3,
+    "title": "corso di cucina vegana",
+    "description": "Impara a cucinare piatti italiani tradizionali",
+    "date": "20 agosto",
+    "maxSeats": 20
+  }
+]
